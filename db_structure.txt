@@ -1,3 +1,10 @@
+USE tesi;
+DROP TABLE company;
+DROP TABLE practice;
+DROP TABLE question;
+DROP TABLE question_answer;
+DROP TABLE answer;
+
 CREATE TABLE company (
 	id_company int NOT NULL AUTO_INCREMENT,
 	name VARCHAR(20),
