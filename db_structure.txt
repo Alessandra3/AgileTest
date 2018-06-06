@@ -1,0 +1,42 @@
+CREATE TABLE company (
+	id_company int NOT NULL AUTO_INCREMENT,
+	name VARCHAR(20),
+	PRIMARY KEY (id_company)
+)
+	
+CREATE TABLE practice (
+	id_practice int NOT NULL AUTO_INCREMENT,
+	name VARCHAR(20),
+	definition VARCHAR(500),
+	id_company int,
+	FOREIGN KEY (id_company) REFERENCES company(id_company),
+	PRIMARY KEY (id_practice)
+)
+
+CREATE TABLE question (
+	id_question int NOT NULL AUTO_INCREMENT,
+	text VARCHAR(500),
+	PRIMARY KEY (id_question)
+)
+
+CREATE TABLE question_answer (
+	id_que_ans int NOT NULL AUTO_INCREMENT,
+	value int,
+	answer VARCHAR(50),
+	definition VARCHAR(500),
+	id_question int,
+	FOREIGN KEY (id_question) REFERENCES question(id_question),	
+	PRIMARY KEY (id_que_ans)
+)
+
+CREATE TABLE answer (
+	id_answer int NOT NULL AUTO_INCREMENT,
+	id_question int,
+	id_practice int,
+	id_que_ans int,
+	FOREIGN KEY (id_question) REFERENCES company(id_question),
+	FOREIGN KEY (id_practice) REFERENCES company(id_practice),
+	FOREIGN KEY (id_que_ans) REFERENCES company(id_que_ans),
+	PRIMARY KEY (id_answer)
+)
+	
