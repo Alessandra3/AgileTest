@@ -8,7 +8,7 @@ class test_model extends CI_Model {
 
         public function get_test()
 		{
-		        $query = $this->db->get('company');
+		        $query = $this->db->get('question');
 		        return $query->result_array();
 		}
 }

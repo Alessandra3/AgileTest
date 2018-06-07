@@ -92,143 +92,143 @@ INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(12,"How often do you release a software version to the costumer?");
+(1,"How often do you release a software version to the costumer?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(13,"After the sprint release in which environment is the new piece of software set?");
+(2,"After the sprint release in which environment is the new piece of software set?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(14,"Is there a Scrum Master");
+(3,"Is there a Scrum Master");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(15,"For each Sprint is there a Sprint Backlog?");
+(4,"For each Sprint is there a Sprint Backlog?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(16,"How are tasks/items assigned to the Team?");
+(5,"How are tasks/items assigned to the Team?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(17,"Who creates the Sprint Backlog?");
+(6,"Who creates the Sprint Backlog?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(18,"Who leads the stand-up meeting?");
+(7,"Who leads the stand-up meeting?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(19,"How often is the stand-up meeting done?");
+(8,"How often is the stand-up meeting done?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(20,"Who takes part to the stand-up meeting?");
+(9,"Who takes part to the stand-up meeting?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(21,"Does everybody answer to the following questions? - What did you do yesterday? - What did you do today? - Which impediments have you mets I your way?");
+(10,"Does everybody answer to the following questions? - What did you do yesterday? - What did you do today? - Which impediments have you mets I your way?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(22,"When is the retrospective meeting done?");
+(11,"When is the retrospective meeting done?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(23,"Who participates to the Retrospective Meeting?");
+(12,"Who participates to the Retrospective Meeting?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(24,"Are the following topics discussed? - What went well in the Sprint? - What could be improved? - What will we commit to improve in the next Sprint?");
+(13,"Are the following topics discussed? - What went well in the Sprint? - What could be improved? - What will we commit to improve in the next Sprint?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(25,"How relevant is the Retrospective Meeting?");
+(14,"How relevant is the Retrospective Meeting?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(26,"What is the limit of hours an employer can work in a week?");
+(15,"What is the limit of hours an employer can work in a week?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(27,"How often does the costumer come to the office?");
+(16,"How often does the costumer come to the office?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(28,"How often do you get costumer feedback?");
+(17,"How often do you get costumer feedback?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(29,"What is the reply time of the costumer?");
+(18,"What is the reply time of the costumer?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(30,"How often do you report to the client?");
+(19,"How often do you report to the client?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(31,"When are test cases done?");
+(20,"When are test cases done?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(32,"Do test cases failures halt the software production?");
+(21,"Do test cases failures halt the software production?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(33,"How often are the implemented functionalities released on the system?");
+(22,"How often are the implemented functionalities released on the system?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(34,"Anyone can change any code anywhere in the system at anytime?");
+(23,"Anyone can change any code anywhere in the system at anytime?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(35,"How often is documentation updated?");
+(24,"How often is documentation updated?");
 
