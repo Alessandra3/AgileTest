@@ -1,0 +1,234 @@
+USE tesi;
+
+INSERT INTO `tesi`.`company`
+(`id_company`,
+`name`)
+VALUES
+(1,"Allinance");
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(2,"Planning game ","Prioritisation of scope for next release based on a combination of business priorities and technical estimates. The ‘planning game’ is a practice of XP, while the corresponding practice in Scrum is referred to as Sprint planning. During a planning game or Sprint planning meeting, tasks for the next Sprint are prioritized based on a combination of business need and technical estimates",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(3,"Stand up meetings","Stand-up meetings suggested by XP (or daily meetings by Scrum) are short daily status meetings where team members quickly plan the work of the day and identify any technical obstacles to fulfilling that work. Typical questions used in stand-up meetings are: What did I work on yesterday?, What do I plan to work on today? and What is getting in my way?",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(4,"Retrospective Meeting","Reflect on method strengths and weaknesses after each cycle",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(5,"40-Hours Week","Work time is generally limited to 40 hours per week",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(6,"On-site Customer","This practice suggests that the development team should include an actual user on the team, who is available full time to answer questions",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(7,"Pair Programming","Code is written by two programmers on the same machine",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(8,"Test First","Continually write tests, which must run flawlessly for development to proceed. Write test code before writing function code",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(9,"Continuous Integration","Integrate and build the system every time a task is completed – this may be many times per day",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(10,"Collective Ownership","Anyone can change any code anywhere in the system at anytime",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
+(11,"Open Space","Working in an open space environment",1);
+
+-------------- QUESTIONS -----------------
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(12,"How often do you release a software version to the costumer?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(13,"After the sprint release in which environment is the new piece of software set?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(14,"Is there a Scrum Master");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(15,"For each Sprint is there a Sprint Backlog?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(16,"How are tasks/items assigned to the Team?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(17,"Who creates the Sprint Backlog?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(18,"Who leads the stand-up meeting?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(19,"How often is the stand-up meeting done?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(20,"Who takes part to the stand-up meeting?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(21,"Does everybody answer to the following questions? - What did you do yesterday? - What did you do today? - Which impediments have you mets I your way?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(22,"When is the retrospective meeting done?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(23,"Who participates to the Retrospective Meeting?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(24,"Are the following topics discussed? - What went well in the Sprint? - What could be improved? - What will we commit to improve in the next Sprint?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(25,"How relevant is the Retrospective Meeting?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(26,"What is the limit of hours an employer can work in a week?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(27,"How often does the costumer come to the office?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(28,"How often do you get costumer feedback?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(29,"What is the reply time of the costumer?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(30,"How often do you report to the client?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(31,"When are test cases done?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(32,"Do test cases failures halt the software production?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(33,"How often are the implemented functionalities released on the system?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(34,"Anyone can change any code anywhere in the system at anytime?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(35,"How often is documentation updated?");
+

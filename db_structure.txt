@@ -13,9 +13,17 @@ CREATE TABLE company (
 	
 CREATE TABLE practice (
 	id_practice int NOT NULL AUTO_INCREMENT,
-	name VARCHAR(20),
+	name VARCHAR(60),
 	definition VARCHAR(500),
 	id_company int,
+	points int,
+	creativity VARCHAR(20),
+	proaction VARCHAR(20),
+	reaction VARCHAR(20),
+	learning VARCHAR(20),
+	cost VARCHAR(20),
+	quality VARCHAR(20),
+	simplicity VARCHAR(20),
 	FOREIGN KEY (id_company) REFERENCES company(id_company),
 	PRIMARY KEY (id_practice)
 );
@@ -46,4 +54,6 @@ CREATE TABLE answer (
 	FOREIGN KEY (id_que_ans) REFERENCES question_answer(id_que_ans),
 	PRIMARY KEY (id_answer)
 );
+
+
 	
