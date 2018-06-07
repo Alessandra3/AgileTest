@@ -288,7 +288,7 @@ VALUES
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
 `value`,
-`answer`,
+`count`,
 `definition`,
 `id_question`)
 VALUES
@@ -297,7 +297,7 @@ VALUES
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
 `value`,
-`answer`,
+`count`,
 `definition`,
 `id_question`)
 VALUES
@@ -306,7 +306,7 @@ VALUES
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
 `value`,
-`answer`,
+`count`,
 `definition`,
 `id_question`)
 VALUES
@@ -315,7 +315,7 @@ VALUES
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
 `value`,
-`answer`,
+`count`,
 `definition`,
 `id_question`)
 VALUES
