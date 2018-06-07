@@ -232,3 +232,53 @@ INSERT INTO `tesi`.`question`
 VALUES
 (24,"How often is documentation updated?");
 
+
+--------------------------------
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`answer`,
+`definition`,
+`id_question`)
+VALUES
+(1,1,"1-2 weeks",1);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`answer`,
+`definition`,
+`id_question`)
+VALUES
+(1,2,"2-3 weeks",1);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`answer`,
+`definition`,
+`id_question`)
+VALUES
+(1,3,"3-4 weeks",1);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`answer`,
+`definition`,
+`id_question`,1)
+VALUES
+(1,4,"more than 4w");
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`answer`,
+`definition`,
+`id_question`)
+VALUES
+(1,5,"more than 8w",1);
