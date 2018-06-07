@@ -1,9 +1,4 @@
 USE tesi;
-DROP TABLE company;
-DROP TABLE practice;
-DROP TABLE question;
-DROP TABLE question_answer;
-DROP TABLE answer;
 
 CREATE TABLE company (
 	id_company int NOT NULL AUTO_INCREMENT,
@@ -37,7 +32,7 @@ CREATE TABLE question (
 CREATE TABLE question_answer (
 	id_que_ans int NOT NULL AUTO_INCREMENT,
 	value int,
-	answer VARCHAR(50),
+	count int,
 	definition VARCHAR(500),
 	id_question int,
 	FOREIGN KEY (id_question) REFERENCES question(id_question),	
