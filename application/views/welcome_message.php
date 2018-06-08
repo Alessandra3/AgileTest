@@ -30,39 +30,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<p>Start The Test And Discover If Your Team Is Working Agile</p>
 							</header>
 							<footer>
-								<a href="#banner" class="button circled scrolly">Start</a>
+								<a href="http://localhost/AgileTest/index.php/question/" class="button circled scrolly">Start</a>
 							</footer>
 						</div>
-
-					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">About</a>
-									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-										<li>
-											<a href="#">And a submenu &hellip;</a>
-											<ul>
-												<li><a href="#">Lorem ipsum dolor</a></li>
-												<li><a href="#">Phasellus consequat</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
-									</ul>
-								</li>
+								<li><a href="#">About</a></li>
 								<li><a href="left-sidebar.html">View Statistics</a></li>
 								<li><a href="right-sidebar.html">Login</a></li>
-															</ul>
+							</ul>
 						</nav>
-
-				</div>
-
-			
+				</div>	
 	</body>
 </html>
