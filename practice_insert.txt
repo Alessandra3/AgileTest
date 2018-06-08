@@ -12,6 +12,14 @@ INSERT INTO `tesi`.`practice`
 `definition`,
 `id_company`)
 VALUES
+(1,"Small Releases","Put a simple system into production quickly, and release new versions on a very short cycle. This practice suggests the team put a simple system into production quickly, and release new versions on a very short cycle. In XP, short iterations of 2 weeks are suggested. In Scrum, it is represented as 30-day Sprints.",1);
+
+INSERT INTO `tesi`.`practice`
+(`id_practice`,
+`name`,
+`definition`,
+`id_company`)
+VALUES
 (2,"Planning game ","Prioritisation of scope for next release based on a combination of business priorities and technical estimates. The ‘planning game’ is a practice of XP, while the corresponding practice in Scrum is referred to as Sprint planning. During a planning game or Sprint planning meeting, tasks for the next Sprint are prioritized based on a combination of business need and technical estimates",1);
 
 INSERT INTO `tesi`.`practice`
