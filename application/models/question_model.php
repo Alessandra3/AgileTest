@@ -6,10 +6,32 @@ class question_model extends CI_Model {
 		$this->load->database();
 	}
 
+	public function check_page_exist($question_num = 1){
+		$query_check = $this->db->query("SELECT CASE WHEN COUNT(1) > 0 THEN 1 ELSE 0 END AS 'check' FROM question Q WHERE Q.id_question = ".$question_num.";");
+		// show_error(print_r($query_check->result_array(1)[0]['check']));
+		if ($query_check->result_array(1)[0]['check'] == 1) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+
 	public function get_question($question_num = 1)
 	{
 		$query = $this->db->query("select Q.text, Q.id_question, A.definition, A.count, A.value from question as Q, question_answer as A where Q.id_question=".$question_num." and A.id_question=Q.id_question order by A.count;");
 		return $query->result_array(1);
+		
+
+		// $query = $this->db->query("select Q.text, Q.id_question, A.definition, A.count, A.value from question as Q, question_answer as A where Q.id_question=".$question_num." and A.id_question=Q.id_question order by A.count;");
+		// if ($query) {
+		// 	show_error("HAasdfasdfJJA");
+		// 	return $query->result_array(1);
+		// }else{
+		// 	show_error("HAJJA");
+		// }
+		// return false;
+		// show_error(($query->result_array(1)).toString());
+		// return $query->result_array(1);
 	}
 
 	public function set_answer()
