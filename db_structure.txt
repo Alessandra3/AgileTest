@@ -40,14 +40,13 @@ CREATE TABLE question_answer (
 );
 
 CREATE TABLE answer (
-	id_answer int NOT NULL AUTO_INCREMENT,
 	id_question int,
 	id_practice int,
 	id_que_ans int,
 	FOREIGN KEY (id_question) REFERENCES question(id_question),
 	FOREIGN KEY (id_practice) REFERENCES practice(id_practice),
 	FOREIGN KEY (id_que_ans) REFERENCES question_answer(id_que_ans),
-	PRIMARY KEY (id_answer)
+	PRIMARY KEY (id_question, id_practice, id_que_ans int)
 );
 
 
