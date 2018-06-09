@@ -40,12 +40,8 @@
 	}
 
 	table {
-		border: 1px solid black;
 		border-collapse: collapse;
 		border-spacing: 0;
-		width: 50%;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 	body {
@@ -2087,13 +2083,15 @@
 /* Wrapper */
 
 	.wrapper {
-		background: #fff;
+		background-color: : #f9fdf8
 		margin: 0 0 2em 0;
 		padding: 6em 0 6em 0;
+
 	}
 
 		.wrapper.style2 {
 			padding-top: 0;
+
 		}
 
 /* Header */
@@ -2618,7 +2616,7 @@
 
 /* Narrower */
 
-	@media screen and (max-width: 840px) {
+	@media screen and (max-width: 845px) {
 
 		/* Basic */
 
@@ -2703,6 +2701,8 @@
 
 			header > p {
 				font-size: 1.25em;
+				font-color:#FFFFFF ;
+
 			}
 
 		/* Image */
