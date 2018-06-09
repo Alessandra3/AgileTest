@@ -46,7 +46,7 @@ CREATE TABLE answer (
 	FOREIGN KEY (id_question) REFERENCES question(id_question),
 	FOREIGN KEY (id_practice) REFERENCES practice(id_practice),
 	FOREIGN KEY (id_que_ans) REFERENCES question_answer(id_que_ans),
-	PRIMARY KEY (id_question, id_practice, id_que_ans int)
+	PRIMARY KEY (id_question, id_practice)
 );
 
 

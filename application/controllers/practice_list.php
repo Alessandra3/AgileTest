@@ -9,13 +9,8 @@ class practice_list extends CI_Controller {
     }
 
      public function index()
-    {
-        $data['pra'] = $this->practice_model->get_practice();
-        $this->load->view('practice_view', $data);
-    }
-
-    public function view()
-    {
+    {   
+        $this->session->set_userdata('practice_num',1);
         $data['pra'] = $this->practice_model->get_practice();
         $this->load->view('practice_view', $data);
     }

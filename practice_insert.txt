@@ -94,7 +94,6 @@ INSERT INTO `tesi`.`practice`
 VALUES
 (11,"Open Space","Working in an open space environment",1);
 
--------------- QUESTIONS -----------------
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
@@ -241,7 +240,6 @@ VALUES
 (24,"How often is documentation updated?");
 
 
---------------------------------
 
 
 
@@ -291,7 +289,6 @@ INSERT INTO `tesi`.`question_answer`
 VALUES
 (5,0,5,"more than 8w",1);
 
--------------ANSWER 2--------------
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,

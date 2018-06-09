@@ -13,4 +13,16 @@ class Question extends CI_Controller {
         $data['question_item'] = $this->question_model->get_question($question_num);
         $this->load->view('question_view', $data);
     }
+
+    public function send_answer()
+    {
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
+        $ret = $this->question_model->set_answer();
+        $this->session->set_userdata('practice_num',$ret['id_practice']);
+
+        $data['question_item'] = $this->question_model->get_question($ret['next_page']);
+        $this->load->view('question_view', $data);
+    }
 }
