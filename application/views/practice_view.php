@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<article>
 							<a href="#" class="image featured"><img src="../../images/pic07.jpg" alt="" /></a>
 								<header>					
-									<h3><a href="http://localhost/AgileTest/index.php/question/1">Small Releases</a></h3>
+									<h3><a href="http://localhost/AgileTest/index.php/question/">Small Releases</a></h3>
 									<h3 style="padding-top: 20px;">Points:</h3>
 								</header>
 								<p>
@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<article>
 							<a href="#" class="image featured"><img src="../../images/pic08.jpg" alt="" /></a>
 								<header>
-									<h3><a href="#">Planning game</a></h3>
+									<h3><a href="http://localhost/AgileTest/index.php/question2/">Planning game</a></h3>
 									<h3 style="padding-top: 20px;">Points:</h3>
 								</header>
 								<p>

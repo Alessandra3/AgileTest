@@ -1,12 +1,12 @@
 <?php
-class question_model extends CI_Model {
+class Question2_model extends CI_Model {
 
 	public function __construct()
 	{
 		$this->load->database();
 	}
 
-	public function check_page_exist($question_num = 1){
+	public function check_page_exist($question_num = 5){
 		$query_check = $this->db->query("SELECT CASE WHEN COUNT(1) > 0 THEN 1 ELSE 0 END AS 'check' FROM question Q WHERE Q.id_question = ".$question_num.";");
 		// show_error(print_r($query_check->result_array(1)[0]['check']));
 		if ($query_check->result_array(1)[0]['check'] == 1) {
@@ -16,7 +16,7 @@ class question_model extends CI_Model {
 		}
 	}
 
-	public function get_question($question_num = 1)
+	public function get_question($question_num = 5)
 	{
 		$query = $this->db->query("select Q.text, Q.id_question, A.definition, A.count, A.value from question as Q, question_answer as A where Q.id_question=".$question_num." and A.id_question=Q.id_question order by A.count;");
 		return $query->result_array(1);
@@ -59,20 +59,5 @@ class question_model extends CI_Model {
 
 		return $ret;
 	}
-
-	public function get_sum_points($id_p = 1){
-		$sum = $this->db->query("select value from tesi.question_answer as a
-					join tesi.answer as b on b.id_que_ans=a.id_que_ans
-					where b.id_practice=".$id_p." ;");
-					$res = $sum->row(1);
-			return $res;
-	}
-
-	public function set_points($ans_points = 0, $id_p){
-
-		$points = $this->db->query("UPDATE `tesi`.`practice`SET`points`= ".$ans_points." WHERE `id_practice`=" .$id_p. ";");
-	}
-
-	
 
 }

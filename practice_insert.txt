@@ -95,6 +95,7 @@ VALUES
 (11,"Open Space","Working in an open space environment",1);
 
 
+
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
@@ -107,139 +108,31 @@ INSERT INTO `tesi`.`question`
 VALUES
 (2,"After the sprint release in which environment is the new piece of software set?");
 
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(3,"Is there a Scrum Master");
 
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(4,"For each Sprint is there a Sprint Backlog?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(5,"How are tasks/items assigned to the Team?");
+(5,"Is there a Scrum Master");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(6,"Who creates the Sprint Backlog?");
+(6,"For each Sprint is there a Sprint Backlog?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(7,"Who leads the stand-up meeting?");
+(7,"How are tasks/items assigned to the Team?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(8,"How often is the stand-up meeting done?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(9,"Who takes part to the stand-up meeting?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(10,"Does everybody answer to the following questions? - What did you do yesterday? - What did you do today? - Which impediments have you mets I your way?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(11,"When is the retrospective meeting done?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(12,"Who participates to the Retrospective Meeting?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(13,"Are the following topics discussed? - What went well in the Sprint? - What could be improved? - What will we commit to improve in the next Sprint?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(14,"How relevant is the Retrospective Meeting?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(15,"What is the limit of hours an employer can work in a week?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(16,"How often does the costumer come to the office?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(17,"How often do you get costumer feedback?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(18,"What is the reply time of the costumer?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(19,"How often do you report to the client?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(20,"When are test cases done?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(21,"Do test cases failures halt the software production?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(22,"How often are the implemented functionalities released on the system?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(23,"Anyone can change any code anywhere in the system at anytime?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(24,"How often is documentation updated?");
-
-
+(8,"Who creates the Sprint Backlog?");
 
 
 
@@ -325,6 +218,151 @@ INSERT INTO `tesi`.`question_answer`
 `id_question`)
 VALUES
 (9,0,4,"No environment",2);
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(10,5,1,"Yes",5);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(11,4,2,"No, we have a Project Manager",5);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(12,2,3,"No, we have a Project Owner",5);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(13,0,4,"No",5);
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(14,5,1,"Yes",6);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(15,4,2,"No, we have a Product Backlog",6);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(16,0,3,"No",6);
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(17,5,1,"Team self-assigned",7);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(18,4,2,"Tasks assigned according to team members skills",7);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(19,2,3,"Scrum Master decides",7);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(20,1,4,"PM decides",7);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(21,5,1,"Team",8);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(22,3,2,"Scrum Master/PM",8);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(23,1,3,"Product Owner",8);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(24,0,4,"Customer",8);
 
 
 

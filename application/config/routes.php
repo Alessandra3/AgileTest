@@ -57,3 +57,5 @@ $route['question/(:any)'] = 'question/view/$1';
 $route['question'] = 'question/view/1';
 $route['practice_list'] = 'practice_list';
 $route['send_answer'] = 'question/send_answer';
+$route['send_answer'] = 'question/send_answer';
+$route['question2'] = 'question2/view/5';

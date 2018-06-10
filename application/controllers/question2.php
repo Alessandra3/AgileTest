@@ -1,12 +1,12 @@
 <?php
-class Question extends CI_Controller {
+class Question2 extends CI_Controller {
 
 
     public function __construct()
     {
         parent::__construct();
         $this->load->helper('url');
-        $this->load->model('question_model');
+        $this->load->model('question2_model');
 
     }
 
@@ -19,19 +19,19 @@ class Question extends CI_Controller {
 
         if ($this->form_validation->run() == FALSE)
         {
-            $this->load->view('question_view');
+            $this->load->view('question2_view');
         }
 
     }
 
-    public function view($question_num = 1)
+    public function view($question_num = 5)
     {
-        $test = $this->question_model->check_page_exist($question_num);
+        $test = $this->question2_model->check_page_exist($question_num);
         if($test == false){
             $this->load->view('practice_view');
         }else{
-            $data['question_item'] = $this->question_model->get_question($question_num);
-            $this->load->view('question_view', $data);
+            $data['question_item'] = $this->question2_model->get_question($question_num);
+            $this->load->view('question2_view', $data);
         }
         
         // $test = $this->question_model->get_question($question_num);
@@ -44,22 +44,21 @@ class Question extends CI_Controller {
         // }
     }
 
-    public function send_answer($ans_points=0)
+    public function send_answer()
     {
 
-        $ret = $this->question_model->set_answer();
+        $ret = $this->question2_model->set_answer();
         $this->session->set_userdata('practice_num',$ret['id_practice']);
 
-        $test = $this->question_model->check_page_exist($ret['next_page']);
+        $test = $this->question2_model->check_page_exist($ret['next_page']);
         if($test == false){
             $this->load->view('practice_view');
-            $this->question_model->set_points($ans_points, $ret['id_practice']);
-
         }else{
-            $data['question_item'] = $this->question_model->get_question($ret['next_page']);
-            $this->load->view('question_view', $data);
-            $ans_points = ($ans_points + ($this->question_model->get_sum_points($ret['id_practice'])));
+            $data['question_item'] = $this->question2_model->get_question($ret['next_page']);
+            $this->load->view('question2_view', $data);
         }
+
+
     }
 
    
