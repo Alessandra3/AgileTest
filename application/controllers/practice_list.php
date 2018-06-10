@@ -11,7 +11,9 @@ class practice_list extends CI_Controller {
      public function index()
     {   
         $this->session->set_userdata('practice_num',1);
-        $data['pra'] = $this->practice_model->get_practice();
+        $data ['result'] = $this->practice_model->get_sum();
         $this->load->view('practice_view', $data);
     }
+
+
 }

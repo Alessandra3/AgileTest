@@ -56,21 +56,7 @@ class question_model extends CI_Model {
 			'id_practice' => $this->input->post('practice_num'),
 			'next_page' => $this->input->post('question_num')+1
 		);
-
-		return $ret;
-	}
-
-	public function get_sum_points($id_p = 1){
-		$sum = $this->db->query("select value from tesi.question_answer as a
-					join tesi.answer as b on b.id_que_ans=a.id_que_ans
-					where b.id_practice=".$id_p." ;");
-					$res = $sum->row(1);
-			return $res;
-	}
-
-	public function set_points($ans_points = 0, $id_p){
-
-		$points = $this->db->query("UPDATE `tesi`.`practice`SET`points`= ".$ans_points." WHERE `id_practice`=" .$id_p. ";");
+			return $ret;
 	}
 
 	

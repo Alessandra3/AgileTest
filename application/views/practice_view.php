@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<a href="#" class="image featured"><img src="../../images/pic07.jpg" alt="" /></a>
 								<header>					
 									<h3><a href="http://localhost/AgileTest/index.php/question/">Small Releases</a></h3>
-									<h3 style="padding-top: 20px;">Points:</h3>
+									<h3 style="padding-top: 20px;">Points: <?php echo $result;?> </h3>
 								</header>
 								<p>
 									“Put a simple system into production quickly, and release new versions on a very short cycle. This practice suggests the team put a simple system into production quickly, and release new versions on a very short cycle. In XP, short iterations of 2 weeks are suggested. In Scrum, it is represented as 30-day Sprints.” 

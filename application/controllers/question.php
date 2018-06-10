@@ -53,12 +53,12 @@ class Question extends CI_Controller {
         $test = $this->question_model->check_page_exist($ret['next_page']);
         if($test == false){
             $this->load->view('practice_view');
-            $this->question_model->set_points($ans_points, $ret['id_practice']);
+
 
         }else{
             $data['question_item'] = $this->question_model->get_question($ret['next_page']);
             $this->load->view('question_view', $data);
-            $ans_points = ($ans_points + ($this->question_model->get_sum_points($ret['id_practice'])));
+            
         }
     }
 
