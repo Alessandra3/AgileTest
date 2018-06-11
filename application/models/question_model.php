@@ -58,7 +58,4 @@ class question_model extends CI_Model {
 		);
 			return $ret;
 	}
-
-	
-
 }

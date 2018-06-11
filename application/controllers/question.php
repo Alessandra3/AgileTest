@@ -7,10 +7,8 @@ class Question extends CI_Controller {
         parent::__construct();
         $this->load->helper('url');
         $this->load->model('question_model');
-
     }
 
- 
     function index()  //validation function that does not work (resolved with checked item on the button field)
     {
         $this->load->helper(array('send_answer', 'url'));
@@ -21,7 +19,6 @@ class Question extends CI_Controller {
         {
             $this->load->view('question_view');
         }
-
     }
 
     public function view($question_num = 1)
@@ -33,38 +30,19 @@ class Question extends CI_Controller {
             $data['question_item'] = $this->question_model->get_question($question_num);
             $this->load->view('question_view', $data);
         }
-        
-        // $test = $this->question_model->get_question($question_num);
-        // // show_error(print_r($test));
-        // if ($test == 1) {
-        //     $this->load->view('practice_view');
-        // }else{
-        //     $data['question_item'] = $test;
-        //     $this->load->view('question_view', $data);
-        // }
     }
 
     public function send_answer($ans_points=0)
     {
-
         $ret = $this->question_model->set_answer();
         $this->session->set_userdata('practice_num',$ret['id_practice']);
 
         $test = $this->question_model->check_page_exist($ret['next_page']);
         if($test == false){
-            $this->load->view('practice_view');
-
-
+            redirect('/practice_list');
         }else{
             $data['question_item'] = $this->question_model->get_question($ret['next_page']);
             $this->load->view('question_view', $data);
-            
         }
     }
-
-   
-
-
-
-
 }
