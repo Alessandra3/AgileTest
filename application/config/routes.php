@@ -53,9 +53,8 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['question/(:any)'] = 'question/view/$1';
-$route['question'] = 'question/view/1';
+$route['question/(:any)/(:any)'] = 'question/view/$1/$2';
+$route['question'] = 'question/view/1/1';
 $route['practice_list'] = 'practice_list';
+$route['practice_set/(:any)'] = 'practice_list/practice_set/$1';
 $route['send_answer'] = 'question/send_answer';
-$route['send_answer'] = 'question/send_answer';
-$route['question2'] = 'question2/view/5';

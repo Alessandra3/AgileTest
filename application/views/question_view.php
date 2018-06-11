@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<input type="hidden" name="question_num" value="<?php echo $question_item[0]['id_question'] ?>">
 					
 					<?php if($answer['id_question'] != 1) : ?>
-						<a href="<?php echo 'question/'.($answer['id_question']-1) ?>" class="button circled scrolly">&#8249;</a> 
+						<a href="<?php echo 'question/'.($answer['id_question']-1).'/'.$_SESSION['practice_num'] ?>" class="button circled scrolly">&#8249;</a> 
 					<?php endif; ?>
 					<input type="submit" class="button circled scrolly" value="&#8250;">
 

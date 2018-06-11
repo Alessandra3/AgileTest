@@ -7,22 +7,26 @@ class Question extends CI_Controller {
         parent::__construct();
         $this->load->helper('url');
         $this->load->model('question_model');
+        $this->load->library('session');
+
     }
 
-    function index()  //validation function that does not work (resolved with checked item on the button field)
-    {
-        $this->load->helper(array('send_answer', 'url'));
-        $this->load->library('form_validation');
-        $this->form_validation->set_rules('question_ans', 'AAA', 'required');
+    // public function index()  //validation function that does not work (resolved with checked item on the button field)
+    // {
+    //     $this->load->helper(array('send_answer', 'url'));
+    //     $this->load->library('form_validation');
+    //     $this->form_validation->set_rules('question_ans', 'AAA', 'required');
 
-        if ($this->form_validation->run() == FALSE)
-        {
-            $this->load->view('question_view');
-        }
-    }
+    //     if ($this->form_validation->run() == FALSE)
+    //     {
+    //         $this->load->view('question_view');
+    //     }
+    // }
 
-    public function view($question_num = 1)
+    public function view($question_num = 1, $prac_num)
     {
+        $this->session->set_userdata('practice_num',$prac_num);
+        // show_error($_SESSION['practice_num']);
         $test = $this->question_model->check_page_exist($question_num);
         if($test == false){
             $this->load->view('practice_view');
@@ -35,7 +39,6 @@ class Question extends CI_Controller {
     public function send_answer($ans_points=0)
     {
         $ret = $this->question_model->set_answer();
-        $this->session->set_userdata('practice_num',$ret['id_practice']);
 
         $test = $this->question_model->check_page_exist($ret['next_page']);
         if($test == false){
