@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- val -->	<?php echo validation_errors(); ?>
 				<?php echo form_open('send_answer');?>
 					<?php foreach ($question_item as $answer): ?>
-						<input type="radio" name="question_ans" checked="checked" value="<?php echo $answer['count'] ?>"><?php echo $answer['definition'] ?><BR>
+						<input type="radio" name="question_ans" checked="checked" value="<?php echo $answer['id_que_ans'] ?>"><?php echo $answer['definition'] ?><BR>
 					<?php endforeach; ?>
 					<input type="hidden" name="practice_num" value="<?php echo $_SESSION['practice_num'] ?>">
 					<input type="hidden" name="question_num" value="<?php echo $question_item[0]['id_question'] ?>">
