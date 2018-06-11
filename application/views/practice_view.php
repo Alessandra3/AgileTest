@@ -35,7 +35,7 @@
           <article>
             <a href="#" class="image featured"><img src="../../images/pic07.jpg" alt="" /></a>
             <header>
-              <h3><a href="http://localhost/AgileTest/index.php/practice_list/practice_set/1">Small Releases</a></h3>
+              <h3><a href="practice_set/1">Small Releases</a></h3>
               <h3 style="padding-top: 20px;">Points: <?php echo $small_releases;?> </h3>
             </header>
             <p>
@@ -48,7 +48,7 @@
           <article>
             <a href="#" class="image featured"><img src="../../images/pic08.jpg" alt="" /></a>
             <header>
-              <h3><a href="http://localhost/AgileTest/index.php/practice_list/practice_set/2">Planning game</a></h3>
+              <h3><a href="practice_set/2">Planning game</a></h3>
               <h3 style="padding-top: 20px;">Points: <?php echo $planning_game;?> </h3>
             </header>
             <p>

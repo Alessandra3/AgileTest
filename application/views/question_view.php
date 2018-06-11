@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<nav id="nav">
 				<ul>
-				<li><a href="index.html">Small Releases</a></li>
+				<li><a href="index.html"><?php echo $practice_name ?></a></li>
 				</ul>
 			</nav>
 		</div>

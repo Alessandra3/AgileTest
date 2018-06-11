@@ -58,4 +58,9 @@ class question_model extends CI_Model {
 		);
 			return $ret;
 	}
+
+	public function get_practice_name($prac_id){
+		$dd = $this->db->query("SELECT name FROM tesi.practice where id_practice = ".$prac_id.";");
+		return $dd->result_array(1)[0]['name'];
+	}
 }

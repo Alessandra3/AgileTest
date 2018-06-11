@@ -26,11 +26,12 @@ class Question extends CI_Controller {
     public function view($question_num = 1, $prac_num)
     {
         $this->session->set_userdata('practice_num',$prac_num);
-        // show_error($_SESSION['practice_num']);
+
         $test = $this->question_model->check_page_exist($question_num);
         if($test == false){
             $this->load->view('practice_view');
         }else{
+            $data['practice_name'] = $this->question_model->get_practice_name($_SESSION['practice_num']);
             $data['question_item'] = $this->question_model->get_question($question_num);
             $this->load->view('question_view', $data);
         }
@@ -44,6 +45,7 @@ class Question extends CI_Controller {
         if($test == false){
             redirect('/practice_list');
         }else{
+            $data['practice_name'] = $this->question_model->get_practice_name($_SESSION['practice_num']);
             $data['question_item'] = $this->question_model->get_question($ret['next_page']);
             $this->load->view('question_view', $data);
         }

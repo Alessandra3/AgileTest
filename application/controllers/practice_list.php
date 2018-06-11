@@ -35,7 +35,6 @@ class practice_list extends CI_Controller {
                 $q_num = 1;
                 break;
         }
-
-        redirect('/question/'.$q_num.'/'.$prac_num);//temp solution
+        redirect('/question/'.$q_num.'/'.$prac_num);
     }
 }
