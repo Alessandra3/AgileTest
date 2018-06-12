@@ -58,3 +58,5 @@ $route['question'] = 'question/view/1/1';
 $route['practice_list'] = 'practice_list';
 $route['practice_set/(:any)'] = 'practice_list/practice_set/$1';
 $route['send_answer'] = 'question/send_answer';
+$route['result1_controller'] = 'result1_controller';
+

@@ -43,6 +43,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<li><a href="right-sidebar.html">Login</a></li>
 							</ul>
 						</nav>
+						<br>
+						<br>
+						<br>
+						<br>
 				</div>	
 	</body>
 </html>

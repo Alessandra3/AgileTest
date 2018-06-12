@@ -137,6 +137,33 @@ VALUES
 
 
 
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(11,"Who leads the stand-up meeting?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(12,"How often is the stand-up meeting done?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(13,"Who takes part to the stand-up meeting?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(14,"Does everybody answer to the following questions? - What did you do yesterday? - What did you do today? - Which impediments have you mets I your way?");
+
+
+
+
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
 `value`,
@@ -218,7 +245,6 @@ INSERT INTO `tesi`.`question_answer`
 `id_question`)
 VALUES
 (9,0,4,"No environment",2);
-
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -363,6 +389,45 @@ INSERT INTO `tesi`.`question_answer`
 `id_question`)
 VALUES
 (24,0,4,"Customer",8);
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(25,5,1,"Team",11);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(26,3,2,"Scrum Master/PM",11);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(27,1,3,"Product Owner",11);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(28,0,4,"Customer",11);
 
 
 

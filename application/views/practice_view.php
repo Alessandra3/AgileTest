@@ -147,5 +147,8 @@
         <span class="backward" style="display: block;"></span>
       </section>
     </div>
+        <div align="center"  ><a href="http://localhost/AgileTest/index.php/result1_controller/" class="button">See Results</a></div>
+    <br>
+    <br>
   </body>
 </html>
