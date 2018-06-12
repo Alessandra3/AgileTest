@@ -17,16 +17,20 @@
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>assets/css/font-awesome.min.css">
     <style>
 	.button1 {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
+    background-color: #df7366;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    margin: 4px 2px;  
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    border-radius: 0.5em;
+    padding: 0.65em 3em 0.65em 3em;
+    border: 0;
+    outline: 0;
+    font-weight: 300;  
 }
 </style>
   </head>
@@ -49,11 +53,8 @@
           	</div> 
           	<br>
           	<br>
-          	<div align="center"><a href="http://localhost/AgileTest/index.php/result1_controller/" class="button1">Countinue The Test</a></div>       
+          	<div align="center"><a href="http://localhost/AgileTest/index.php/pra_table_controller/" class="button1">Countinue The Test</a></div>       
           </footer>
-
-          
-
         </div>
       </div>
     </div>

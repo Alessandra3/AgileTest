@@ -17,6 +17,8 @@ class result1_model extends CI_Model {
 
 		$dd = $this->db->query("select sum(points) as points from practice;");
 		return $dd->result_array(1)[0]['points'];
-	}	
+	}
+
+		
 }
 
