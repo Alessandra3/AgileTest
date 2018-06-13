@@ -60,4 +60,4 @@ $route['practice_set/(:any)'] = 'practice_list/practice_set/$1';
 $route['send_answer'] = 'question/send_answer';
 $route['result1_controller'] = 'result1_controller';
 $route['pra_table_controller'] = 'pra_table_controller';
-
+$route['ajax_add'] = 'pra_table_controller/ajax_add';

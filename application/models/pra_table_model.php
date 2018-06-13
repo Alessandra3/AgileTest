@@ -8,7 +8,7 @@ class pra_table_model extends CI_Model {
 
     public function get_max_practices(){
 
-        $query = $this->db->query("select name as name from practice as p where p.points > 5;");
+        $query = $this->db->query("select name, id_practice from practice as p where p.points > 5;");
         return $query->result_array();
       }
 
@@ -21,9 +21,11 @@ class pra_table_model extends CI_Model {
         $id_row3 = $this->input->post('row3');
         $id_row4 = $this->input->post('row4');
 
-        $query = $this->db->query("UPDATE `tesi`.`practice`SET`creativity` = ".$id_row1.",`proaction` = ".$id_row2.",`reaction` = ".$id_row3.",`learning` = ".$id_row4." WHERE `id_practice` = 1;");
+        $query = $this->db->query("UPDATE `tesi`.`practice` SET `creativity` = ".$id_row1.",`proaction` = ".$id_row2.",`reaction` = ".$id_row3.",`learning` = ".$id_row4." WHERE `id_practice` = 1;");
 
     }
 
-    
+    public function add_property($postData){
+        $query = $this->db->query("UPDATE `tesi`.`practice` SET ".$postData['property']." = '".$postData['value']."' WHERE id_practice = ".$postData['id'].";");
+    }
 }
