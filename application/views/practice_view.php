@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>assets/css/main.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   </head>
   <body class="homepage">
     <div id="page-wrapper">
@@ -104,17 +103,16 @@
         <span class="forward" style="display: block;"></span>
         <span class="backward" style="display: block;"></span>
       </section>
-           </div>
-        <div align="center"  ><a href="http://localhost/AgileTest/index.php/result1_controller/" class="button">See Results</a></div>
-
-      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
-      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.dropotron.min.js"></script>
-      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.scrolly.min.js"></script>
-      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.onvisible.min.js"></script>
-      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/skel.min.js"></script>
-      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/util.js"></script>
-      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/main.js"></script>
+    </div>
+    <div align="center"><a href="http://localhost/AgileTest/index.php/result1_controller/" class="button">See Results</a></div>
+    <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
+    <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.dropotron.min.js"></script>
+    <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.scrolly.min.js"></script>
+    <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.onvisible.min.js"></script>
+    <script type = "text/javascript" src="<?php echo base_url();?>assets/js/skel.min.js"></script>
+    <script type = "text/javascript" src="<?php echo base_url();?>assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script type = "text/javascript" src="<?php echo base_url();?>assets/js/main.js"></script>
     <br>
     <br>
   </body>
