@@ -107,14 +107,14 @@
            </div>
         <div align="center"  ><a href="http://localhost/AgileTest/index.php/result1_controller/" class="button">See Results</a></div>
 
-      <script type = "text/css" src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
-      <script type = "text/css" src="<?php echo base_url();?>assets/js/jquery.dropotron.min.js"></script>
-      <script type = "text/css" src="<?php echo base_url();?>assets/js/jquery.scrolly.min.js"></script>
-      <script type = "text/css" src="<?php echo base_url();?>assets/js/jquery.onvisible.min.js"></script>
-      <script type = "text/css" src="<?php echo base_url();?>assets/js/skel.min.js"></script>
-      <script type = "text/css" src="<?php echo base_url();?>assets/js/util.js"></script>
+      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
+      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.dropotron.min.js"></script>
+      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.scrolly.min.js"></script>
+      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/jquery.onvisible.min.js"></script>
+      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/skel.min.js"></script>
+      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/util.js"></script>
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script type = "text/css" src="<?php echo base_url();?>assets/js/main.js"></script>
+      <script type = "text/javascript" src="<?php echo base_url();?>assets/js/main.js"></script>
     <br>
     <br>
   </body>
