@@ -26,7 +26,7 @@
       <section class="carousel">
         <div class="reel">
           <article>
-            <a href="#" class="image featured"><img src="../../images/pic07.jpg" alt="" /></a>
+            <a href="#" class="image featured"><img src="<?php echo base_url(); ?>images/pic07.jpg" alt="" /></a>
             <header>
               <h3><a href="practice_set/1">Small Releases</a></h3>
               <h3 style="padding-top: 20px;">Points: <?php echo $small_releases;?> </h3>
@@ -39,7 +39,7 @@
             </p>
           </article>
           <article>
-            <a href="#" class="image featured"><img src="../../images/pic08.jpg" alt="" /></a>
+            <a href="#" class="image featured"><img src="<?php echo base_url(); ?>images/pic08.jpg" alt="" /></a>
             <header>
               <h3><a href="practice_set/2">Planning game</a></h3>
               <h3 style="padding-top: 20px;">Points: <?php echo $planning_game;?> </h3>
@@ -49,7 +49,7 @@
             </p>
           </article>
           <article>
-            <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
+            <a href="#" class="image featured"><img src="<?php echo base_url(); ?>images/pic09.jpg" alt="" /></a>
             <header>
               <h3><a href="#">Stand-up meetings </a></h3>
               <h3 style="padding-top: 20px;">Points:</h3>
@@ -61,7 +61,7 @@
             </p>
           </article>
           <article>
-            <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
+            <a href="#" class="image featured"><img src="<?php echo base_url(); ?>images/pic09.jpg" alt="" /></a>
             <header>
               <h3><a href="#">Retrospective Meeting</a></h3>
               <h3 style="padding-top: 20px;">Points:</h3>
@@ -81,7 +81,7 @@
             </p>
           </article>
           <article>
-            <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
+            <a href="#" class="image featured"><img src="<?php echo base_url(); ?>images/pic09.jpg" alt="" /></a>
             <header>
               <h3><a href="#">40-Hours Week</a></h3>
               <h3 style="padding-top: 20px;">Points:</h3>
