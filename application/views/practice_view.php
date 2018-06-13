@@ -7,16 +7,7 @@
     <title>Practices List</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>assets/css/main.css">
-    <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>assets/css/ie8.css">
-    <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>assets/css/font-awesome.min.css">
-    <script type='text/javascript' src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
-    <script type='text/javascript' src="<?php echo base_url(); ?>assets/js/jquery.dropotron.js"></script>
-    <script type='text/javascript' src="<?php echo base_url(); ?>assets/js/jquery.onvisible.min.js"></script>
-    <script type='text/javascript' src="<?php echo base_url(); ?>assets/js/jquery.scrolly.min.js"></script>
-    <script type='text/javascript' src="<?php echo base_url(); ?>assets/js/main.js"></script>
-    <script type='text/javascript' src="<?php echo base_url(); ?>assets/js/skel.min.js"></script>
-    <script type='text/javascript' src="<?php echo base_url(); ?>assets/js/util.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>assets/css/main.css"/>
   </head>
   <body class="homepage">
     <div id="page-wrapper">
@@ -31,7 +22,7 @@
       </section>
       <!-- Carousel -->
       <section class="carousel">
-        <div class="reel" style="overflow: visible; transform: translate(0px,0px);">
+        <div class="reel">
           <article>
             <a href="#" class="image featured"><img src="../../images/pic07.jpg" alt="" /></a>
             <header>
@@ -107,47 +98,21 @@
               <br>
             </p>
           </article>
-          <article>
-            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-            <header>
-              <h3><a href="#">Pulvinar sagittis congue</a></h3>
-            </header>
-            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-          </article>
-          <article>
-            <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-            <header>
-              <h3><a href="#">Fermentum sagittis proin</a></h3>
-            </header>
-            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-          </article>
-          <article>
-            <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-            <header>
-              <h3><a href="#">Sed quis rhoncus placerat</a></h3>
-            </header>
-            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-          </article>
-          <article>
-            <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-            <header>
-              <h3><a href="#">Ultrices urna sit lobortis</a></h3>
-            </header>
-            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-          </article>
-          <article>
-            <a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-            <header>
-              <h3><a href="#">Varius magnis sollicitudin</a></h3>
-            </header>
-            <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-          </article>
         </div>
         <span class="forward" style="display: block;"></span>
         <span class="backward" style="display: block;"></span>
       </section>
-    </div>
+           </div>
         <div align="center"  ><a href="http://localhost/AgileTest/index.php/result1_controller/" class="button">See Results</a></div>
+
+      <script type = "text/css" src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
+      <script type = "text/css" src="<?php echo base_url();?>assets/js/jquery.dropotron.min.js"></script>
+      <script type = "text/css" src="<?php echo base_url();?>assets/js/jquery.scrolly.min.js"></script>
+      <script type = "text/css" src="<?php echo base_url();?>assets/js/jquery.onvisible.min.js"></script>
+      <script type = "text/css" src="<?php echo base_url();?>assets/js/skel.min.js"></script>
+      <script type = "text/css" src="<?php echo base_url();?>assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script type = "text/css" src="<?php echo base_url();?>assets/js/main.js"></script>
     <br>
     <br>
   </body>

@@ -7,6 +7,8 @@ class practice_list extends CI_Controller {
         $this->load->helper('url');
         $this->load->model('practice_model');
         $this->load->library('session');
+        $this->load->library('javascript');
+      
     }
 
      public function index()
