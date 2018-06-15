@@ -33,6 +33,17 @@
     outline: 0;
     font-weight: 300;  
 }
+
+.prac{
+
+  width: 170px;
+   position: absolute;
+    top: 360px;
+    left: 270px;
+    font-size: 25px;
+
+}
+
 </style>
   </head>
   <body class="homepage">
@@ -41,19 +52,26 @@
         <div class="inner">
           <header>
             <h1>Are You USING Agile?</h1>
-            <hr />
-            <p>Great! The first part of your test is finished! This is the result:</p>
-            <p>Total points earned: <?php echo $max_points;?><BR> </p>
-            <p align="center">The following are the practices you are using correctly: </p>
-          </header>
-          <footer>
-          	<div>
-            <?php foreach ($max_prac as $item):?>
-          		<li><?php echo $item['name'];?></li>
-          	<?php endforeach;?> 
-          	</div> 
+            <br>
+                  <p>Great! The first part of your test is finished! This is the result:</p>
+                <BR>
+                <p style="font-weight: bold">TOTAL POINTS: <?php echo $max_points;?><BR> </p>
+                <br>
+                <p align="center">The following are the Agile Practices you are using correctly: </p>
+              </header>
+              <footer>
+              <br>
+              	<div class="prac">
+                <?php foreach ($max_prac as $item):?>
+              		<?php echo $item['name'];?>
+              	<?php endforeach;?> 
+              	</div>
           	<br>
           	<br>
+            <br>
+            <br>
+            <br>
+            <br>
           	<div align="center"><a href="http://localhost/AgileTest/index.php/pra_table_controller/" class="button1">Countinue The Test</a></div>       
           </footer>
         </div>

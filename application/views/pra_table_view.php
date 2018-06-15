@@ -29,11 +29,10 @@
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
-		<!-- Header -->
-		<div id="header">
-			<!-- Inner -->
+		  <div id="header">
 			<div class="inner">
-				<table>
+
+<table>
 					<thead>
 						<tr>
 							<td>Practice Name</td>
@@ -115,7 +114,6 @@
 						</tr>
 						<?php endforeach;?>
 					</tbody>
-					<input align="center" type="submit" name="save" value="Save Data"/>
 				</table>
 				<script type="text/javascript">
 					function fun(id_sel, id_practice, name_property) {
