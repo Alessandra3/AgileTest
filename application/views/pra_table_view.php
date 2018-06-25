@@ -25,14 +25,41 @@
 			table, th, td {
 			border: 1px solid black;
 			}
+            .button1 {
+    background-color: #df7366;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;  
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    border-radius: 0.5em;
+    padding: 0.65em 3em 0.65em 3em;
+    border: 0;
+    outline: 0;
+    font-weight: 300;  
+}
+
+.prac{
+
+  width: 170px;
+   position: absolute;
+    top: 360px;
+    left: 270px;
+    font-size: 25px;
 		</style>
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
-		  <div id="header">
-			<div class="inner">
 
-<table>
+		  <div id="header">
+          <h1>Are You Agile?</h1>
+          <br>
+			<div class="inner">
+                     
+                <table>
 					<thead>
 						<tr>
 							<td>Practice Name</td>
@@ -133,10 +160,11 @@
 					}
 				</script>			
 			</div>
+             <div align="center"><a href="http://localhost/AgileTest/index.php/graph_controller/" class="button1">See Test Result</a></div>
 			<br>
 			<br>
 			<br>
 			<br>
-		</div>
+		</div>       
 	</body>
 	</html>
