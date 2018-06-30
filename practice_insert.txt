@@ -114,7 +114,7 @@ INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(5,"Is there a Scrum Master");
+(5,"Is there a Scrum Master?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
@@ -161,6 +161,131 @@ INSERT INTO `tesi`.`question`
 VALUES
 (14,"Does everybody answer to the following questions? - What did you do yesterday? - What did you do today? - Which impediments have you mets I your way?");
 
+
+
+
+
+
+
+
+
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(17,"When is the retrospective meeting done?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(18,"Who participates to the Retrospective Meeting?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(19,"Are the following topics discussed? - What went well in the Sprint? - What could be improved? - What will we commit to improve in the next Sprint?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(20,"How relevant is the Retrospective Meeting?");
+
+
+
+
+
+
+
+
+
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(23,"What is the limit of hours an employer can work in a week?");
+
+
+
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(26,"How often does the costumer come to the office?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(27,"How often do you get costumer feedback?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(28,"How often do you report to the client?");
+
+
+
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(31,"When are test cases done?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(32,"Do test cases failures halt the software production?");
+
+
+
+
+
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(35,"How often are the implemented functionalities released on the system?");
+
+
+
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(38,"Anyone can change any code anywhere in the system at anytime?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(39,"How often is documentation updated?");
+
+
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(42,"Is there the case in which two programmers works together on the same code and on the same workstation?");
+
+
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(45,"Is your team working in an open space environment?");
 
 
 
@@ -390,7 +515,7 @@ INSERT INTO `tesi`.`question_answer`
 VALUES
 (24,0,4,"Customer",8);
 
-
+---da qui---
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -409,7 +534,8 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(26,3,2,"Scrum Master/PM",11);
+(26,3,2,"Scrum Master/Project Manager",11);
+
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -418,7 +544,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(27,1,3,"Product Owner",11);
+(27,5,1,"Every day",12);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -427,7 +553,628 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(28,0,4,"Customer",11);
+(28,3,2,"2-3 times per week",12);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(29,2,3,"Once a week",12);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(30,1,4,"Once in a month",12);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(31,0,5,"Never",12);
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(32,0,1,"Team and Scrum Master",13);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(33,0,2,"Team and Project Manager",13);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(34,0,3,"Business people (SM/PM/PO)",13);
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(35,2,1,"Yes",14);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(36,1,2,"Not always",14);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(37,0,3,"No",14);
+
+
+---- da qui2----
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(38,5,1,"At the end of the Sprint",17);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(39,1,2,"Not regularly",17);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(40,0,3,"Never",17);
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(41,5,1,"Team, Srum Master, Product Owner and Project Manager",18);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(42,4,2,"Team, Scrum Master and Project Manager",18);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(43,3,3,"Team, Project Manager and Product Owner",18);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(44,0,4,"Project Manager and Product Owner",18);
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(45,5,1,"Yes, all of them",19);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(46,3,2,"Not always",19);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(47,0,3,"No",19);
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(48,5,1,"Really Relevant",20);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(49,2,2,"Partially Relevant",20);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(50,0,3,"Not relevant at all",20);
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(51,5,1,"less than 40h",23);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(52,3,2,"less than 45h",23);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(53,1,3,"less than 50h",23);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(54,0,4,"more than 50h",23);
+
+--daqui3---
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(55,5,1,"Is a team member (always present)",26);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(56,3,2,"More times per week",26);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(57,1,3,"More times per month",26);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(58,0,4,"Never",26);
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(59,5,1,"Everytime we ask it",27);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(60,2,2,"Only at the end of the Sprint",27);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(61,0,3,"Never",27);
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(62,5,1,"Daily",28);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(63,2,2,"Weekly",28);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(64,1,3,"Mothly",28);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(65,0,4,"Never",28);
+
+
+--da qui3----
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(66,5,1,"Before the implementation",31);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(67,2,2,"During the implememtation",31);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(68,1,3,"At the end of the implementation",31);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(69,0,4,"Never",31);
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(70,5,1,"During the implememtation",32);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(71,3,2,"At the end of the implementation",32);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(72,0,3,"Never",32);
+
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(73,5,1,"After every task",35);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(74,3,2,"After a group of tasks",35);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(75,2,3,"After the Sprint end",35);
+
+--- da qui---
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(76,5,1,"Yes",38);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(77,3,2,"Only with supervision (PM/PO)",38);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(78,0,3,"No",38);
+
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(79,5,1,"After every task",39);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(80,3,2,"After group of tasks",39);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(81,1,3,"Towards the end of the Sprint",39);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(82,0,4,"Never",39);
+
+
+
+------------
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(83,4,1,"Yes, always",42);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(84,1,2,"Not regularly",42);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(85,0,3,"Never",42);
+
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(86,4,1,"Yes, there are no individual offices",45);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(87,3,2,"Yes, every team has a dedicated office",45);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(88,0,3,"No",45);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

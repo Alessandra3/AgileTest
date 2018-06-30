@@ -17,7 +17,7 @@
                             </header>
                         </div>
     <!-- prepare a DOM container with width and height -->
-    <div id="main" style="width: 2000px;height:900px; padding-top: 60px;padding-left: 50px;"></div>
+    <div id="main" style="width: 2000px;height:900px; padding-top: 60px;padding-left: 1px;"></div>
     <script type="text/javascript">
         // based on prepared DOM, initialize echarts instance
         var myChart = echarts.init(document.getElementById('main'));
@@ -27,7 +27,7 @@
 
     tooltip: {},
     legend: {
-        data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）']
+        data: ['Small Releases', 'Planning Game', '实际开销（Retrospective）','实际开销（One site costumer）','实际开销（Stand Up Meeting）','实际开销（Test First）','实际开销（Open Space）','实际开销（Planning Game）','实际开销（Planning Game）','实际开销（Planning Game）','实际开销（Planning Game）','实际开销（Planning Game）','实际开销（Planning Game）','实际开销（Planning Game）','实际开销（Planning Game）']
     },
     radar: {
         // shape: 'circle',
@@ -40,12 +40,13 @@
            }
         },
         indicator: [
-           { name: '销售（sales）', max: 6500},
-           { name: '管理（Administration）', max: 16000},
-           { name: '信息技术（Information Techology）', max: 30000},
-           { name: '客服（Customer Support）', max: 38000},
-           { name: '研发（Development）', max: 52000},
-           { name: '市场（Marketing）', max: 25000}
+           { name: '销售（Creativity）', max: 6500},
+           { name: '管理（Reaction）', max: 16000},
+           { name: '信息技术（Proaction）', max: 30000},
+           { name: '客服（Learning）', max: 38000},
+           { name: '研发（Cost）', max: 52000},
+           { name: '市场（Quality）', max: 25000},
+           { name: '市场（Simplicity）', max: 25000}
         ]
     },
     series: [{
@@ -55,11 +56,11 @@
         data : [
             {
                 value : [4300, 10000, 28000, 35000, 50000, 19000],
-                name : '预算分配（Allocated Budget）'
+                name : 'Small Releases'
             },
              {
                 value : [5000, 14000, 28000, 31000, 42000, 21000],
-                name : '实际开销（Actual Spending）'
+                name : 'Planning Game'
             }
         ]
     }]

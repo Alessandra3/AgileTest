@@ -68,8 +68,8 @@
           <article>
             <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
             <header>
-              <h3><a href="#">Stand-up meetings </a></h3>
-              <h3 style="padding-top: 20px;">Points:</h3>
+              <h3><a href="practice_set/3">Stand-up meetings </a></h3>
+              <h3 style="padding-top: 20px;">Points:  <?php echo $stand_up_meeting;?></h3>
             </header>
             <p>
               “Stand-up meetings suggested by XP (or daily meetings by Scrum) are short daily status meetings where team members quickly plan the work of the day and identify any technical obstacles to fulfilling that work. Typical questions used in stand-up meetings are: “What did I work on yesterday?”, “What do I plan to work on today?” and “What is getting in my way?”.
@@ -80,8 +80,8 @@
           <article>
             <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
             <header>
-              <h3><a href="#">Retrospective Meeting</a></h3>
-              <h3 style="padding-top: 20px;">Points:</h3>
+              <h3><a href="practice_set/4">Retrospective Meeting</a></h3>
+              <h3 style="padding-top: 20px;">Points: <?php echo $retrospective;?></h3>
             </header>
             <p>
               “Reflect on method strengths and weaknesses after each cycle.”
@@ -100,8 +100,8 @@
           <article>
             <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
             <header>
-              <h3><a href="#">40-Hours Week</a></h3>
-              <h3 style="padding-top: 20px;">Points:</h3>
+              <h3><a href="practice_set/5">40-Hours Week</a></h3>
+              <h3 style="padding-top: 20px;">Points: <?php echo $hours;?></h3>
             </header>
             <p>
               “Work time is generally limited to 40 hours per week.”
@@ -110,6 +110,118 @@
               <br>
               <br>
               <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </p>
+          </article>
+           <article>
+            <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
+            <header>
+              <h3><a href="practice_set/6">One-site Costumer</a></h3>
+              <h3 style="padding-top: 20px;">Points: <?php echo $costumer;?> </h3>
+            </header>
+            <p>
+             “This practice suggests that the development team should include an actual user on the team, who is available full time to answer questions.”
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+            </p>
+          </article>
+          <article>
+            <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
+            <header>
+              <h3><a href="practice_set/8">Test First</a></h3>
+              <h3 style="padding-top: 20px;">Points: <?php echo $test;?></h3>
+            </header>
+            <p>
+            “Continually write tests, which must run flawlessly for development to proceed. Write test code before writing function code.”
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </p>
+          </article>
+          <article>
+            <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
+            <header>
+              <h3><a href="practice_set/9">Continuous Integration</a></h3>
+              <h3 style="padding-top: 20px;">Points: <?php echo $integration;?></h3>
+            </header>
+            <p>
+           “Integrate and build the system every time a task is completed – this may be many times per day.”
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </p>
+          </article>
+           <article>
+            <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
+            <header>
+              <h3><a href="practice_set/10">Collective Ownership</a></h3>
+              <h3 style="padding-top: 20px;">Points:  <?php echo $coll_ownership;?> </h3>
+            </header>
+            <p>
+          “Anyone can change any code anywhere in the system at any time”
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </p>
+          </article>
+           <article>
+            <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
+            <header>
+              <h3><a href="practice_set/11">Open Space</a></h3>
+              <h3 style="padding-top: 20px;">Points: <?php echo $open_space;?></h3>
+            </header>
+            <p>
+          “Work in an open space environment”
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </p>
+          </article>
+           <article>
+            <a href="#" class="image featured"><img src="../../images/pic09.jpg" alt="" /></a>
+            <header>
+              <h3><a href="practice_set/7">Pair Programming</a></h3>
+              <h3 style="padding-top: 20px;">Points: <?php echo $pp;?></h3>
+            </header>
+            <p>
+          “Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator,reviews each line of code as it is typed in.”
               <br>
               <br>
               <br>
