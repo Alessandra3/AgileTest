@@ -110,6 +110,9 @@ VALUES
 
 
 
+
+
+
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
@@ -133,6 +136,21 @@ INSERT INTO `tesi`.`question`
 `text`)
 VALUES
 (8,"Who creates the Sprint Backlog?");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -237,14 +255,7 @@ INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(31,"When are test cases done?");
-
-INSERT INTO `tesi`.`question`
-(`id_question`,
-`text`)
-VALUES
-(32,"Do test cases failures halt the software production?");
-
+(31,"Is there the case in which two programmers works together on the same code and on the same workstation?");
 
 
 
@@ -254,7 +265,19 @@ INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(35,"How often are the implemented functionalities released on the system?");
+(34,"When are test cases done?");
+
+INSERT INTO `tesi`.`question`
+(`id_question`,
+`text`)
+VALUES
+(35,"Do test cases failures halt the software production?");
+
+
+
+
+
+
 
 
 
@@ -263,21 +286,23 @@ INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(38,"Anyone can change any code anywhere in the system at anytime?");
+(38,"How often are the implemented functionalities released on the system?");
+
+
+
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(39,"How often is documentation updated?");
-
-
+(41,"Anyone can change any code anywhere in the system at anytime?");
 
 INSERT INTO `tesi`.`question`
 (`id_question`,
 `text`)
 VALUES
-(42,"Is there the case in which two programmers works together on the same code and on the same workstation?");
+(42,"How often is documentation updated?");
+
 
 
 
@@ -296,7 +321,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(1,5,1,"1-2 weeks",1);
+(1,4,1,"1-2 weeks",1);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -305,7 +330,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(2,4,2,"2-3 weeks",1);
+(2,3,2,"2-3 weeks",1);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -314,7 +339,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(3,3,3,"3-4 weeks",1);
+(3,2,3,"3-4 weeks",1);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -342,7 +367,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(6,5,1,"Client Production",2);
+(6,4,1,"Client Production",2);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -351,7 +376,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(7,4,2,"Client Test",2);
+(7,3,2,"Client Test",2);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -379,7 +404,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(10,5,1,"Yes",5);
+(10,4,1,"Yes",5);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -388,7 +413,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(11,4,2,"No, we have a Project Manager",5);
+(11,3,2,"No, we have a Project Manager",5);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -397,7 +422,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(12,2,3,"No, we have a Project Owner",5);
+(12,1,3,"No, we have a Project Owner",5);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -417,7 +442,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(14,5,1,"Yes",6);
+(14,4,1,"Yes",6);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -426,7 +451,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(15,4,2,"No, we have a Product Backlog",6);
+(15,3,2,"No, we have a Product Backlog",6);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -447,7 +472,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(17,5,1,"Team self-assigned",7);
+(17,4,1,"Team self-assigned",7);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -456,7 +481,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(18,4,2,"Tasks assigned according to team members skills",7);
+(18,3,2,"Tasks assigned according to team members skills",7);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -476,7 +501,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(20,1,4,"PM decides",7);
+(20,1,4,"Project Manager decides",7);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -486,7 +511,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(21,5,1,"Team",8);
+(21,4,1,"Costumer",8);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -495,7 +520,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(22,3,2,"Scrum Master/PM",8);
+(22,3,2,"Product Owner",8);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -504,7 +529,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(23,1,3,"Product Owner",8);
+(23,2,3,"Team",8);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -513,7 +538,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(24,0,4,"Customer",8);
+(24,0,4,"Scrum Master",8);
 
 ---da qui---
 
@@ -525,7 +550,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(25,5,1,"Team",11);
+(25,4,1,"Team",11);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -534,7 +559,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(26,3,2,"Scrum Master/Project Manager",11);
+(26,2,2,"Scrum Master/Project Manager",11);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -544,7 +569,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(27,5,1,"Every day",12);
+(27,4,1,"Every day",12);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -593,7 +618,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(32,0,1,"Team and Scrum Master",13);
+(32,4,1,"Team and Scrum Master",13);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -602,7 +627,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(33,0,2,"Team and Project Manager",13);
+(33,3,2,"Team and Project Manager",13);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -653,7 +678,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(38,5,1,"At the end of the Sprint",17);
+(38,4,1,"At the end of the Sprint",17);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -682,7 +707,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(41,5,1,"Team, Srum Master, Product Owner and Project Manager",18);
+(41,4,1,"Team, Srum Master, Product Owner and Project Manager",18);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -691,7 +716,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(42,4,2,"Team, Scrum Master and Project Manager",18);
+(42,3,2,"Team, Scrum Master and Project Manager",18);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -700,7 +725,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(43,3,3,"Team, Project Manager and Product Owner",18);
+(43,2,3,"Team, Project Manager and Product Owner",18);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -720,7 +745,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(45,5,1,"Yes, all of them",19);
+(45,2,1,"Yes, all of them",19);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -729,7 +754,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(46,3,2,"Not always",19);
+(46,1,2,"Not always",19);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -749,7 +774,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(48,5,1,"Really Relevant",20);
+(48,2,1,"Really Relevant",20);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -758,7 +783,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(49,2,2,"Partially Relevant",20);
+(49,1,2,"Partially Relevant",20);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -779,7 +804,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(51,5,1,"less than 40h",23);
+(51,10,1,"less than 40h",23);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -788,7 +813,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(52,3,2,"less than 45h",23);
+(52,8,2,"less than 45h",23);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -797,7 +822,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(53,1,3,"less than 50h",23);
+(53,4,3,"less than 50h",23);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -818,7 +843,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(55,5,1,"Is a team member (always present)",26);
+(55,4,1,"Is a team member (always present)",26);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -849,6 +874,8 @@ VALUES
 
 
 
+
+
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
 `value`,
@@ -856,7 +883,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(59,5,1,"Everytime we ask it",27);
+(59,4,1,"Everytime we ask it",27);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -886,7 +913,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(62,5,1,"Daily",28);
+(62,4,1,"Daily",28);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -917,6 +944,41 @@ VALUES
 (65,0,4,"Never",28);
 
 
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(66,4,1,"Yes, always",31);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(67,1,2,"Not regularly",31);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(68,0,3,"Never",31);
+
+
+
+
+
 --da qui3----
 
 INSERT INTO `tesi`.`question_answer`
@@ -926,7 +988,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(66,5,1,"Before the implementation",31);
+(69,4,1,"Before the implementation",34);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -935,7 +997,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(67,2,2,"During the implememtation",31);
+(70,2,2,"During the implememtation",34);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -944,19 +1006,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(68,1,3,"At the end of the implementation",31);
-
-
-INSERT INTO `tesi`.`question_answer`
-(`id_que_ans`,
-`value`,
-`count`,
-`definition`,
-`id_question`)
-VALUES
-(69,0,4,"Never",31);
-
-
+(71,1,3,"At the end of the implementation",34);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -966,27 +1016,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(70,5,1,"During the implememtation",32);
-
-INSERT INTO `tesi`.`question_answer`
-(`id_que_ans`,
-`value`,
-`count`,
-`definition`,
-`id_question`)
-VALUES
-(71,3,2,"At the end of the implementation",32);
-
-
-INSERT INTO `tesi`.`question_answer`
-(`id_que_ans`,
-`value`,
-`count`,
-`definition`,
-`id_question`)
-VALUES
-(72,0,3,"Never",32);
-
+(72,0,4,"Never",34);
 
 
 
@@ -998,7 +1028,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(73,5,1,"After every task",35);
+(73,4,1,"Yes",35);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -1007,7 +1037,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(74,3,2,"After a group of tasks",35);
+(74,2,2,"Not always",35);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -1017,7 +1047,39 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(75,2,3,"After the Sprint end",35);
+(75,0,3,"No",35);
+
+
+
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(76,10,1,"After every task",38);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(77,8,2,"After a group of tasks",38);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(78,0,3,"After the Sprint end",38);
 
 --- da qui---
 
@@ -1028,7 +1090,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(76,5,1,"Yes",38);
+(79,4,1,"Yes",41);
 
 INSERT INTO `tesi`.`question_answer`
 (`id_que_ans`,
@@ -1037,20 +1099,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(77,3,2,"Only with supervision (PM/PO)",38);
-
-
-INSERT INTO `tesi`.`question_answer`
-(`id_que_ans`,
-`value`,
-`count`,
-`definition`,
-`id_question`)
-VALUES
-(78,0,3,"No",38);
-
-
-
+(80,3,2,"Only with supervision (PM/PO)",41);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -1060,26 +1109,10 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(79,5,1,"After every task",39);
-
-INSERT INTO `tesi`.`question_answer`
-(`id_que_ans`,
-`value`,
-`count`,
-`definition`,
-`id_question`)
-VALUES
-(80,3,2,"After group of tasks",39);
+(81,0,3,"No",41);
 
 
-INSERT INTO `tesi`.`question_answer`
-(`id_que_ans`,
-`value`,
-`count`,
-`definition`,
-`id_question`)
-VALUES
-(81,1,3,"Towards the end of the Sprint",39);
+
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -1089,7 +1122,36 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(82,0,4,"Never",39);
+(82,4,1,"After every task",42);
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(83,3,2,"After group of tasks",42);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(84,1,3,"Towards the end of the Sprint",42);
+
+
+INSERT INTO `tesi`.`question_answer`
+(`id_que_ans`,
+`value`,
+`count`,
+`definition`,
+`id_question`)
+VALUES
+(85,0,4,"Never",42);
 
 
 
@@ -1104,7 +1166,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(83,4,1,"Yes, always",42);
+(86,4,1,"Yes, always",42);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -1114,7 +1176,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(84,1,2,"Not regularly",42);
+(87,1,2,"Not regularly",42);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -1124,7 +1186,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(85,0,3,"Never",42);
+(88,0,3,"Never",42);
 
 
 
@@ -1137,7 +1199,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(86,4,1,"Yes, there are no individual offices",45);
+(89,10,1,"Yes, there are no individual offices",45);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -1147,7 +1209,7 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(87,3,2,"Yes, every team has a dedicated office",45);
+(90,8,2,"Yes, every team has a dedicated office",45);
 
 
 INSERT INTO `tesi`.`question_answer`
@@ -1157,7 +1219,11 @@ INSERT INTO `tesi`.`question_answer`
 `definition`,
 `id_question`)
 VALUES
-(88,0,3,"No",45);
+(91,0,3,"No",45);
+
+
+
+
 
 
 

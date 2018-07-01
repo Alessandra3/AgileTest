@@ -36,11 +36,11 @@
 
 .prac{
 
-  width: 170px;
+   width: 187px;
    position: absolute;
     top: 360px;
     left: 270px;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
@@ -63,11 +63,13 @@
               <br>
               	<div class="prac">
                 <?php foreach ($max_prac as $item):?>
-              		<?php echo $item['name'];?>
+              		<?php echo $item['name']; ?> 
+                  <br>
               	<?php endforeach;?> 
               	</div>
           	<br>
           	<br>
+            <br>
             <br>
             <br>
             <br>

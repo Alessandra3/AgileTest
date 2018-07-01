@@ -20,10 +20,10 @@ class practice_list extends CI_Controller {
         $data['retrospective'] = $this->practice_model->get_sum(4);
         $data['hours'] = $this->practice_model->get_sum(5);
         $data['costumer'] = $this->practice_model->get_sum(6);
+        $data['pp'] = $this->practice_model->get_sum(7);
         $data['test'] = $this->practice_model->get_sum(8);
         $data['integration'] = $this->practice_model->get_sum(9);
         $data['coll_ownership'] = $this->practice_model->get_sum(10);
-        $data['pp'] = $this->practice_model->get_sum(7);
         $data['open_space'] = $this->practice_model->get_sum(11);
         $this->load->view('practice_view', $data);
     }
@@ -51,17 +51,17 @@ class practice_list extends CI_Controller {
             case 6:
                 $q_num = 26;
                 break;
-            case 8:
+            case 7:
                 $q_num = 31;
                 break;
-            case 9:
-                $q_num = 35;
+            case 8:
+                $q_num = 34;
                 break;
-            case 10:
+            case 9:
                 $q_num = 38;
                 break;
-            case 7:
-                $q_num = 42;
+            case 10:
+                $q_num = 41;
                 break;
             case 11:
                 $q_num = 45;
